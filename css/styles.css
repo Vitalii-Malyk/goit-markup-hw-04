@@ -234,6 +234,7 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  margin-top: 8px;
 }
 
 .feature-list .text {
@@ -254,7 +255,18 @@ body {
 .feature-list li {
   width: 264px;
 }
-
+.features-icon-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--second-bg-color);
+  width: 264px;
+  height: 112px;
+  border-radius: 4px;
+}
+.features-icon {
+  fill: var(--second-color-text);
+}
 /*?----------------------------- What are we doing----------------------------- */
 .section-work {
   padding-bottom: 120px;
@@ -331,10 +343,17 @@ body {
   height: 100%;
   border-radius: 50%;
   display: inline-block;
-  background-color: #4d5ae5;
+  background-color: var(--accent-color);
   display: flex;
   align-items: center;
   justify-content: center;
+  fill: var(--second-bg-color);
+}
+
+.team-soc-link:hover,
+.team-soc-link:focus {
+  fill: var(--second-bg-color);
+  background-color: var(--hover-focus-color);
 }
 
 /*?-------------------------------------- Customers ------------------------------*/
@@ -363,9 +382,17 @@ body {
 .clients-link {
   display: inline-block;
 }
+.clients-link {
+  fill: #8e8f99;
+}
+
 .clients-item:focus,
 .clients-item:hover {
   border-color: var(--hover-focus-color);
+}
+.clients-link:hover,
+.clients-link:focus {
+  fill: var(--hover-focus-color);
 }
 
 /*!-------------------------------- ПОРТФОЛІО----------------------------- */
@@ -401,7 +428,7 @@ body {
 .text-footer {
   font-size: 16px;
   line-height: 24px;
-  color: #f4f4fd;
+  color: var(--second-bg-color);
   background-color: var(--second-color-text);
   width: 264px;
   margin-top: 18px;
@@ -411,7 +438,52 @@ body {
   padding-bottom: 100px;
   padding-top: 100px;
 }
+.section-footer .footer-soc-title {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
 
+.footer-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.footer-soc-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: var(--accent-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--second-bg-color);
+}
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  background-color: #31d0aa;
+}
+
+.footer-soc-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-list {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 120px;
+}
+.footer-soc-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  gap: 16px;
+}
 /*?------------------------------ section-portfolio---------------------- */
 .section-portfolio {
   padding-top: 96px;
