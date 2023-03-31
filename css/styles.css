@@ -572,7 +572,7 @@ body {
 }
 
 .work-items .link {
-  display: inline-block;
+  display: block;
 }
 .work-items .link:focus,
 .work-items .link:hover {
