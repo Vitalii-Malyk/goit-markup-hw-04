@@ -551,7 +551,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-basis: calc(100% / 3 - 24px);
-  margin-left: -24px;
 }
 
 .work-items {
@@ -569,6 +568,9 @@ body {
 
 .work-items:nth-child(-n + 3) {
   margin-top: 0px;
+}
+.work-items:nth-child(3n + 1) {
+  margin-left: 0px;
 }
 
 .work-items .link {
